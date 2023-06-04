@@ -20,7 +20,7 @@ jobs:
         shell: pwsh
       - name: Run step in case of failure
         if: ${{ failure() }}
-      - run: echo "Some steps above failed"
+        run: echo "Some steps above failed"
         
   Selenium_Test_Job2:
     name: Selenium Test Job 2
