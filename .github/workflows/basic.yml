@@ -15,6 +15,7 @@ jobs:
           ls -l
         shell: bash
       - name: Run script file from repo
+        if: ${{ always() }}
         run: sh ./run.sh
         shell: pwsh
         
