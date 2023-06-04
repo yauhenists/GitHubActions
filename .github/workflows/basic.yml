@@ -6,3 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "This is running inside a ${{ runner.os }} server in GitHub"
+      - name: Check out source code
+        uses: actions/checkout@v3.5.2
+      - run: echo "This repo is ${{ github.repository }}."
