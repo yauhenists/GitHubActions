@@ -21,6 +21,7 @@ jobs:
   Selenium_Test_Job2:
     name: Selenium Test Job 2
     runs-on: ubuntu-latest
+    if: ${{ always() }}
     needs: Selenium_Test_Job1
     steps:
       - run: echo "This is from Job 2"
